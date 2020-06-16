@@ -136,3 +136,70 @@
 .banner-sec .banner-cntr .indiv-child .brf-dspn p.cnt-dspn {
     display: flex;
 }
+
+.about-us-sec,
+.contact-us-sec {
+    height: calc(100vh - 85px);
+    width: 100vw;
+    padding: 30px 50px;
+    background-image: url(../gallery/aboutus-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.contact-us-sec {
+    background-image: url(../gallery/contactus-background.png);
+}
+
+.about-us-sec .cnt-sec,
+.contact-us-sec .cnt-sec {
+    width: 600px;
+    max-width: 100%;
+    text-align: justify;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.contact-us-sec .cnt-sec {
+    display: flex;
+    width: 80vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+
+.contact-us-sec .cnt-sec .wc-cu-details {
+    flex: 1;
+    padding: 20px 20px;
+}
+
+.contact-us-sec .cnt-sec .wc-g-map {
+    flex: 2;
+}
+
+.contact-us-sec .cnt-sec .wc-cu-details .follow-sec .icon-part a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    margin: 0px 10px;
+    transition: all 0.3s ease-out;
+}
+
+.contact-us-sec .cnt-sec .wc-cu-details .follow-sec .icon-part a:hover {
+    color: orange;
+}
+
+.contact-us-sec .cnt-sec .wc-cu-details .address-sec a.cont {
+    text-decoration: none;
+    color: orange;
+    margin: 0px 10px;
+    transition: all 0.3s ease-out;
+}
+
+.contact-us-sec .cnt-sec .wc-cu-details .address-sec a.cont:hover {
+    text-decoration: underline;
+}

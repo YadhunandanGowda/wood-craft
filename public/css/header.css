@@ -12,10 +12,124 @@ header {
     z-index: 99;
 }
 
+#preloader {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#preloader .preloader-animation {
+    position: absolute;
+    top: calc(50% - 3.25em);
+    left: calc(50% - 3.25em);
+}
+
+#preloader .preloader-container {
+    position: absolute;
+    top: calc(50% - 3.25em);
+    text-align: center;
+    width: 100%;
+}
+
+#preloader .preloader-animation {
+    display: inline-block;
+    height: 6.5em;
+    width: 6.5em;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: orange;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+#preloader .preloader-animation:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: orange;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+#preloader .preloader-animation:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: orange;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
 header .logo img {
     width: 150px;
 }
 
 header .logo .mob-icon {
     display: none;
+}
+
+.wc-nav-menu a.option {
+    margin: 0px 10px;
+    padding: 5px 0px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.wc-nav-menu a.option::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: all 0.3s ease-out;
+}
+
+.wc-nav-menu a.option:hover::after {
+    transform: scaleX(1);
 }
