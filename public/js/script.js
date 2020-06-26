@@ -8,6 +8,9 @@ $(document).on('ready', function() {
         autoplaySpeed: 3000
     });
 
+    $(".catagory-sec .cat-row .indi img").on('click', function() {
+        window.location.href = "./catagories.html?cat=" + $(this).attr("data-cat");
+    })
 })
 
 document.onreadystatechange = function() {
