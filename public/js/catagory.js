@@ -96,3 +96,16 @@ $(document).on('ready', function() {
     }
 
 })
+
+
+$(document).on("click", ".cat-container .each-img img", function() {
+    if ($(window).width() > 1240) {
+        $(".img-popup .img-cntr img").attr("src", $(this).attr("src"));
+        $(".img-popup").addClass("show");
+    }
+})
+
+
+$(document).on("click", ".img-popup .cls-btn", function() {
+    $(this).parents(".img-popup").removeClass("show");
+})

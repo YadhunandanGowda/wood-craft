@@ -7,10 +7,13 @@ header {
     padding: 10px 30px;
     width: 100%;
     /* background: #a25099; */
-    background: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.30196078431372547);
+    /* background: rgb(255, 255, 255); */
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.2);
     z-index: 99;
-    border: 1px dashed #000000;
+    /* border: 1px dashed #000000; */
+    background-image: url(../gallery/cat-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #preloader {
@@ -103,7 +106,7 @@ header {
 }
 
 header .logo img {
-    width: 150px;
+    width: 130px;
 }
 
 header .logo .mob-icon {
@@ -111,26 +114,38 @@ header .logo .mob-icon {
 }
 
 .wc-nav-menu a.option {
+    display: inline-block;
     margin: 0px 10px;
-    padding: 5px 0px;
-    color: black;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
     text-decoration: none;
     position: relative;
-}
-
-.wc-nav-menu a.option::after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    background-color: black;
-    transform: scaleX(0);
-    transform-origin: center;
     transition: all 0.3s ease-out;
 }
 
-.wc-nav-menu a.option:hover::after {
-    transform: scaleX(1);
+.wc-nav-menu a.option:hover {
+    /* box-shadow: inset 0px 0px 20px 1px rgba(255, 255, 255, 0.3); */
+    background-color: black;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 10px 10px;
+    }
+    header .logo img {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 340px) {
+    header .logo img {
+        width: 80px;
+    }
+    .wc-nav-menu a.option {
+        font-size: 10px;
+    }
 }
