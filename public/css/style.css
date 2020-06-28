@@ -124,9 +124,9 @@
 }
 
 .banner-sec .banner-cntr .indiv-child .brf-dspn.makeItCenter {
-    top: 10%;
+    top: 2%;
     left: 50%;
-    transform: translate(-50%, -10%);
+    transform: translate(-50%, -2%);
     box-shadow: unset;
     font-family: blenda-script;
     text-align: center;

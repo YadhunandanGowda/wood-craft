@@ -9,7 +9,9 @@ $(document).on('ready', function() {
     });
 
     $(".catagory-sec .cat-row .indi img , .banner-sec .banner-cntr .indiv-child .brf-dspn").on('click', function() {
-        window.location.href = "./catagories.html?cat=" + $(this).attr("data-cat");
+        if ($(this).attr("data-cat") != "") {
+            window.location.href = "./catagories.html?cat=" + $(this).attr("data-cat");
+        }
     })
 
 })

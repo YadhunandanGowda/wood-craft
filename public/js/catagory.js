@@ -12,73 +12,73 @@ $(document).on('ready', function() {
             }
         case "cots":
             {
-                title = "Cot";
+                title = "Cots";
                 totalImages = 10;
                 break;
             }
         case "diningtables":
             {
-                title = "Dining Table";
+                title = "Dining Tables";
                 totalImages = 6;
                 break;
             }
         case "diwans":
             {
-                title = "Diwnas";
+                title = "Diwans";
                 totalImages = 10;
                 break;
             }
         case "royalchairs":
             {
-                title = "Royal Chair";
+                title = "Royal Chairs";
                 totalImages = 6;
                 break;
             }
         case "teapoys":
             {
-                title = "Teapoy";
+                title = "Teapoys";
                 totalImages = 10;
                 break;
             }
         case "cornerstands":
             {
-                title = "Corner Stand";
+                title = "Corner Stands";
                 totalImages = 6;
                 break;
             }
         case "dressingtables":
             {
-                title = "Dressing Table";
+                title = "Dressing Tables";
                 totalImages = 6;
                 break;
             }
         case "showcase":
             {
-                title = "Showcase";
+                title = "Showcases";
                 totalImages = 6;
                 break;
             }
         case "cupboards":
             {
-                title = "CupBoard";
+                title = "CupBoards";
                 totalImages = 4;
                 break;
             }
         case "sofas":
             {
-                title = "Sofa";
+                title = "Sofas";
                 totalImages = 10;
                 break;
             }
         case "mirrorframes":
             {
-                title = "Mirror Frame";
+                title = "Mirror Frames";
                 totalImages = 6;
                 break;
             }
         case "swings":
             {
-                title = "Swing";
+                title = "Swings";
                 totalImages = 6;
                 break;
             }
