@@ -134,6 +134,7 @@
     padding-bottom: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid black;
+    cursor: default;
 }
 
 .banner-sec .banner-cntr .indiv-child .brf-dspn.makeItCenter h1.cnt-ttl {
