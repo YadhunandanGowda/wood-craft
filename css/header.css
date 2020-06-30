@@ -124,6 +124,7 @@ header .logo .mob-icon {
     text-decoration: none;
     position: relative;
     transition: all 0.3s ease-out;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.8);
 }
 
 .wc-nav-menu a.option:hover {
