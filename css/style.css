@@ -74,7 +74,7 @@
 }
 
 .banner-sec .banner-cntr .arrow-rgt {
-    left: unset;
+    left: auto;
     right: 30px;
 }
 
