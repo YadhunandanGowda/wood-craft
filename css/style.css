@@ -124,6 +124,7 @@
 }
 
 .banner-sec .banner-cntr .indiv-child .brf-dspn.makeItCenter {
+    display: table;
     top: 2%;
     left: 50%;
     transform: translate(-50%, -2%);

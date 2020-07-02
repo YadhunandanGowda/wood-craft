@@ -1,8 +1,18 @@
 $(document).on('ready', function() {
-    let url = new URL(window.location.href);
-    let catagory = url.searchParams.get("cat");
+    // let url = new URL(window.location.href);
+    // let catagory = url.searchParams.get("cat");
     let title;
     let totalImages;
+
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    let catagory = getParameterByName('cat');
+
     switch (catagory) {
         case "chairs":
             {
@@ -90,9 +100,7 @@ $(document).on('ready', function() {
     $(".cat-ttl").text(title);
 
     for (i = 1; i <= totalImages; i++) {
-        $(".cat-container").append(`<div class="each-img">
-                            <img src="./gallery/${catagory}/${catagory}-0${i}.jpg" alt="">
-                       </div>`)
+        $(".cat-container").append('<div class="each-img"><img src="./gallery/' + catagory + '/' + catagory + '-0' + i + '.jpg" alt=""></div>');
     }
 
 })
